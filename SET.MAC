@@ -1,0 +1,7 @@
+SETCURSOR MACRO X, Y 
+        MOV DL, Y         ; Y COORDINATE or COLUMN 
+        MOV DH, X        ; X COORDINATE or ROW 
+        MOV BH, 00H     ; CURRENT PAGE 
+        MOV AH, 02H 
+        INT 10H 
+ENDM
