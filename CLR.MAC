@@ -1,0 +1,5 @@
+CLRSCR MACRO 
+        MOV AH, 00H 
+        MOV AL, 02H ; video mode code
+        INT 10H 
+ENDM 
